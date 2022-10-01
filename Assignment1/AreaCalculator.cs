@@ -21,11 +21,11 @@ namespace Assignment1
             }
             double triangle_area = (2 * x * x) / 2;
 
-            double semiCircle = (x * x) - (0.25 * Math.PI * (x * x));
+            double quarter = (x * x) - (0.25 * Math.PI * (x * x));
             double sector = ((x * x) / 2) * (Math.PI - 2 * Math.Atan(x / (2 * x)));
             double isosceles = (x * x) * Math.Sin(Math.Atan(x / (2 * x))) * Math.Cos(Math.Atan(x / (2 * x)));
 
-            return Math.Round(triangle_area - semiCircle - (sector - isosceles), 3);
+            return Math.Round(triangle_area - quarter - (sector - isosceles), 3);
         }
     }
 }

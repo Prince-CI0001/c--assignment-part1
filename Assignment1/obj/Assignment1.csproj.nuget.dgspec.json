@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\Assignment1.csproj": {}
+    "c:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\Assignment1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\Assignment1.csproj": {
+    "c:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\Assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\Assignment1.csproj",
+        "projectUniqueName": "c:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\Assignment1.csproj",
         "projectName": "Assignment1",
-        "projectPath": "C:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\Assignment1.csproj",
+        "projectPath": "c:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\Assignment1.csproj",
         "packagesPath": "C:\\Users\\PrinceGoyal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\obj\\",
+        "outputPath": "c:\\Users\\PrinceGoyal\\Desktop\\C#\\Assignment1\\Assignment1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PrinceGoyal\\AppData\\Roaming\\NuGet\\NuGet.Config",
