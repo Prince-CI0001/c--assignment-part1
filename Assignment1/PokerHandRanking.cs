@@ -76,30 +76,6 @@ namespace Assignment1
 
             string result = CardName(flush, straight,ranks,groups);
             return result;
-            //if (straight && flush)
-            //    return ranks[0] == 12 ? "Royal Flush" : "Straight Flush";
-            //if (straight)
-            //    return "Straight";
-            //if (flush)
-            //    return "Flush";
-            //if (groups.Length == 2)
-            //{
-            //    if (groups[0] == 4)
-            //        return "Four of a Kind";
-            //    else if (groups[0] == 3)
-            //        return "Full House";
-            //}
-            //else if (groups.Length == 3)
-            //{
-            //    if (groups[0] == 3)
-            //        return "Three of a Kind";
-            //    else if (groups[0] == 2)
-            //        return "Two Pair";
-            //}
-            //else if (groups.Length == 4)
-            //    return "Pair";
-
-            //return "High Card";
         }
     }
 }
