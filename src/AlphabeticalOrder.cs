@@ -1,5 +1,5 @@
 ﻿
-namespace Assignment1
+namespace Csharp.Assignment1
 {
     public class AlphabeticalOrder
     {
