@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Intrinsics.Arm;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assignment1
+﻿namespace Assignment1
 {
-    class BinaryClock
+    public class BinaryClock
     {
         public BinaryClock() { }
-        public string reverse(string str)
+        private string reverse(string str)
         {
             if (str.Length <= 1)
             return str;
             else 
             return reverse(str.Substring(1)) + str[0];
         }
-        public string ConvertToBinary(int N)
+        private string ConvertToBinary(int N)
         {
             string outputString;
             int B_Number = 0;
@@ -34,7 +27,7 @@ namespace Assignment1
             
            return  reverse(outputString);
         }
-        public string[] zeroes(string[] arr)
+        private string[] zeroes(string[] arr)
         {
             string timeLength = "434342";
             for (int i = 0; i < arr.Length; i++)
@@ -58,7 +51,7 @@ namespace Assignment1
             }
             return arr;
         }
-        public string[] fillMatrix(string[] arr)
+        private string[] fillMatrix(string[] arr)
         {
             char[ , ] filler = new char[6,4];
             for(int i=0;i<6;i++)
@@ -85,7 +78,7 @@ namespace Assignment1
             }    
             return result;
         }
-        public void Binary_Clock(string str)
+        public void BinaryMatrix(string str)
         {
             str = str.Replace(":", "");
             string[] arr = new string[6];

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assignment1
+﻿namespace Assignment1
 {
-    class AreaCalculator
+    public class AreaCalculator
     {
-        public double Area_Calculator(int r)
+        public double Area(int r)
         {
             double x;
             if (r != 0)

@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-
-namespace Assignment1
+﻿namespace Assignment1
 {
-    class PokerHandRanking
+    public class PokerHandRanking
     {
-        public string CardName(bool flush,bool straight,int[] ranks,int[] groups)
+        private string CardName(bool flush,bool straight,int[] ranks,int[] groups)
         {
             if (straight && flush)
                 return ranks[0] == 12 ? "Royal Flush" : "Straight Flush";
@@ -36,7 +29,7 @@ namespace Assignment1
 
             return "High Card";
         }
-        public string Poker_Hand_Ranking(string[] cards)
+        public string PokerHand(string[] cards)
         {
             string[] order = new string[] { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
             int[] ranks = new int[5];
@@ -71,8 +64,8 @@ namespace Assignment1
             Array.Sort(groups);
             Array.Reverse(groups);
 
-            bool flush = suits.Count == 1;
-            bool straight = set_ranks.Count == 5 && (ranks[0] - ranks[4] == 4);
+            bool flush = (suits.Count == 1);
+            bool straight = (set_ranks.Count == 5) && (ranks[0] - ranks[4] == 4);
 
             string result = CardName(flush, straight,ranks,groups);
             return result;

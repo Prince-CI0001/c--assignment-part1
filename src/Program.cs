@@ -1,34 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-namespace Assignment1
+﻿namespace Assignment1
 {
-    class Program
+    internal class Program
     {
          
             static void AlphabeticalOrder()
             {
-            Alphabetical_Order obj = new Alphabetical_Order();
+            AlphabeticalOrder obj = new AlphabeticalOrder();
             Console.WriteLine("Enter the input string");
             string str = Console.ReadLine();
-            Console.WriteLine(obj.OutputString(str));
+            str = obj.SequenceOrder(str);
+            Console.WriteLine(str);
             }
+
+
             static void AreaCalculator()
             {
             AreaCalculator obj = new AreaCalculator();  
             Console.WriteLine("Enter the radius value");
-            Console.WriteLine(obj.Area_Calculator(int.Parse(Console.ReadLine())));
+            int radius = int.Parse(Console.ReadLine());
+            Console.WriteLine(obj.Area(radius));
             }
+
+
             static void BinaryClock()
             {
             BinaryClock obj = new BinaryClock();
             Console.WriteLine("Enter the Input time");
             string time = Console.ReadLine();
-            obj.Binary_Clock(time);
+            obj.BinaryMatrix(time);
             }
+
+
             static void CardRanking()
             {
             PokerHandRanking obj = new PokerHandRanking();
@@ -36,17 +38,19 @@ namespace Assignment1
             string[] cards = new string[5];
             for(int i = 0; i < cards.Length; i++)
                 cards[i] = Console.ReadLine();
-            Console.WriteLine(obj.Poker_Hand_Ranking(cards));
+            Console.WriteLine(obj.PokerHand(cards));
             }
+
+
             static void CentrifugeProblem()
             {
-            Centrifuge_Problem obj = new Centrifuge_Problem();
+            CentrifugeProblem obj = new CentrifugeProblem();
             Console.WriteLine("Enter for the n test tube Configuration");
             int n = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter for the k test tube Configuration");
             int k = int.Parse(Console.ReadLine());
             Console.WriteLine(obj.BalancingConfiguration(n,k));
-        }
+            }
 
 
 

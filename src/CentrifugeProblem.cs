@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Assignment1
+﻿namespace Assignment1
 {
-    public class Centrifuge_Problem
+    public class CentrifugeProblem
     {
         public bool BalancingConfiguration(int n, int k)
         {
+            //int nk = n - k;
+            //if ((n == k) || (k >= nk && nk != 1 && k % nk == 0) || (nk > k && k != 1 && nk % k == 0))
+            //    return true;
+            //return false;
             bool compare_factors = (MatchFactors(n, k));
 
             return (n !=1 && (n == k || compare_factors));
@@ -32,7 +28,7 @@ namespace Assignment1
             }
             return false;
         }
-        public List<int> findFactors(int n)
+        private List<int> findFactors(int n)
         {
             List<int> result = new List<int>();
             while (n % 2 == 0)
