@@ -19,9 +19,9 @@ namespace Csharp.Assignment1
                     map.Add(c, 1);
                 }
             }
-            var keys_sorted = map.Keys.ToList();
-            keys_sorted.Sort();
-            foreach (var k in keys_sorted)
+            var keySorted = map.Keys.ToList();
+            keySorted.Sort();
+            foreach (var k in keySorted)
             {
                 if (k != ' ')
                 {
